@@ -1,0 +1,85 @@
+html { 
+  background: url(images/background_1.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+*{
+  margin: 0;
+  padding: 0;  
+}
+.App {
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+}
+
+.App-logo {
+  height: 39px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 8%;
+  padding: 10px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 77%;
+}
+.user_input{
+  display: flex;  
+  width: 60vw;
+  padding: 13px;
+  outline: none;
+  border-radius: 3px;
+  border: 0px;
+  text-indent: 28px;
+  background-image:url('./images/icons/ic-pin.svg'); 
+  background-position: 7px 5px;
+  background-size: 28px;
+  background-repeat: no-repeat;
+}
+
+.user_input:focus{
+  width: 58.5vw;
+  font-size: 12px;
+  padding: 15px;
+  text-indent: 25px;
+  color : purple;
+  border: 0.5px;
+  border-style: solid;
+  border-color: #FFD700; 
+}
+
+.user_input:focus::placeholder{
+  font-size: 6px;
+  padding: 0px 0px 0px 15px;
+  text-indent: 12px;
+  position: relative;
+  top: -2.5em;
+  left: 0em;
+  color: gray;
+}
+
+.user_input::placeholder {
+  color: #383838;
+  font-size: smaller;
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
