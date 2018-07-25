@@ -1,4 +1,4 @@
-#How to run work
+#Weather App
 
 npm install
 
