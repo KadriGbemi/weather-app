@@ -112,6 +112,9 @@ datalist {
   overflow: hidden;
   position: absolute;
 }
+.header{
+  color: rgb(121, 172, 219);
+}
 .weather_list{
   background-color: white;
   list-style-type: none;
