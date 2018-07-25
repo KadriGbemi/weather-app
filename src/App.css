@@ -7,8 +7,9 @@ html {
 }
 *{
   margin: 0;
-  padding: 0;  
+  padding: 0; 
 }
+
 .App {
   text-align: center;
   height: 100vh;
@@ -65,21 +66,83 @@ html {
   border-style: solid;
   border-color: #FFD700; 
 }
-
-.user_input:focus::placeholder{
+.search_hint{
   font-size: 6px;
-  padding: 0px 0px 0px 15px;
+  padding: 3px 0px 0px 15px;
+  position: absolute;
   text-indent: 12px;
-  position: relative;
-  top: -2.5em;
-  left: 0em;
+  right: 30em;
+  font-weight: bold;
   color: gray;
+  z-index: 2;
 }
 
 .user_input::placeholder {
-  color: #383838;
+  color: gray;
   font-size: smaller;
   font-weight: bold;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  display: block;
+}
+.user_input:focus::placeholder{
+  color: white;
+ }
+
+datalist {
+	display: none;
+}
+.user_input::-webkit-calendar-picker-indicator {
+	display: none;
 }
 
+.dropdown-list{
+  background-color: white;
+  list-style-type: none;
+  text-align: left;
+  max-height: 110px;
+  min-height: 0px;
+  overflow: hidden;
+  color: rgb(85, 83, 83);
+  font-size: 10px;
+  border-radius: 3px;
+}
+
+.weatherDropdown{
+  width: 68%;
+  max-height: 136px;
+  overflow: hidden;
+  position: absolute;
+}
+.weather_list{
+  background-color: white;
+  list-style-type: none;
+  width: 33.33%;
+  text-align: left;
+  min-height: 0px;
+  overflow: hidden;
+  color: rgb(85, 83, 83);
+  font-size: 10px;
+  float: left;
+}
+.dropdown-list:hover{
+  border: 1px;
+  border: 0.5px;
+  border-style: solid;
+  border-color: #FFD700;
+  margin-top: 0px;
+  border-radius: 3px;
+}
+.weather_icon{
+  float: left;
+}
+.weather_prop{
+  padding: 5px;
+}
+.location_list{
+  font-size: 12px;
+  padding: 9px;
+  margin-top: 5px;
+}
+
+.location_list:hover{
+  background-color: rgb(233, 212, 215);
+}

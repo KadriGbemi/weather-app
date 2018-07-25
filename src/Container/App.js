@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from '../images/icons/mc-logo.png';
 import '../App.css';
-import Search_Input from '../Components/Search_Input';
+import Searchinput from '../Components/index';
 
 class App extends Component {
   render() {
@@ -11,9 +11,8 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" /> 
         </header>
         <div className="container">
-         <Search_Input />
+         <Searchinput />
         </div>   
-        
       </div>
     );
   }
