@@ -25,7 +25,6 @@ class index extends Component {
         this.handleSubmitRequest = this.handleSubmitRequest.bind(this);
         this.handleSubmitRequesttype = this.handleSubmitRequesttype.bind(this);
     }
-
     handleOnInputHover(){
       this.setState({
         handleOnInputHover: false,
@@ -84,16 +83,18 @@ class index extends Component {
     this.setState({ text: event.title});
     this.handleOnInputHover();
     this.handleSubmitRequest();
+    console.log("Handled Click", this.state.weather)
   }
   handleWeatherIcon(){
     console.log("Weather Icon", this.state.weather)
   }
 
+  
     
   render() {
-    if(this.state.weather.applicable_date){
+    const roundTo = require('round-to');
+    console.log( roundTo(1.234, 2));
 
-    }
     return (
       <div>
           <div 
@@ -135,11 +136,12 @@ class index extends Component {
                     value={weather}                      
                     className="weather_list"
                     > 
+                    
                         <p className="header"> {weather.applicable_date} </p>  
                         <p> <img src={this.state.imgSrc} alt="WeatherIcon" height="22" width="22" onLoad={this.handleWeatherIcon.bind(this,weather)}/>
                         {weather.weather_state_name} </p>
-                        <p className="weather_prop"> Max: {weather.max_temp}°C </p>
-                        <p className="weather_prop"> Min:{weather.min_temp}°C</p>
+                        <p className="weather_prop"> Max: <span className="round-number">{weather.max_temp}°C </span> </p>
+                        <p className="weather_prop"> <span className="round-number">Min:{weather.min_temp}°C</span></p>
                         <p className="weather_prop"> <img src={this.state.imageSrc} alt="WeatherIcon" height="12" width="12" classname="weather_icon"onLoad={this.handleWeatherIcon.bind(this,weather)}/> {weather.wind_speed} mph </p>
                         </li>
                       )}

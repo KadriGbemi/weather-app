@@ -15,6 +15,7 @@ html {
   height: 100vh;
   width: 100vw;
   background-repeat: no-repeat;
+ 
 }
 
 .App-logo {
@@ -107,7 +108,7 @@ datalist {
 }
 
 .weatherDropdown{
-  width: 69%;
+  width: 62%;
   max-height: 136px;
   overflow: hidden;
   position: absolute;
@@ -117,7 +118,12 @@ datalist {
 }
 .header{
   color: rgb(121, 172, 219);
+  font: bold;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 10px;
 }
+
 .weather_list{
   background-color: white;
   width: 33.33%;
@@ -153,4 +159,10 @@ datalist {
 
 .location_list:hover{
   background-color: rgb(233, 212, 215);
+}
+
+@media screen and (max-width: 360px) {
+  .weatherDropdown{
+    width: 69%;
+  }
 }
