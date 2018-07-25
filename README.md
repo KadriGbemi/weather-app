@@ -1,7 +1,11 @@
-#Weather App
+#Weather App - (About)
 
-npm install
+- npm install 
 
-npm run start
+- npm run start
 
-Click on drop-down menu to select item
+- Enter desired location on input field.
+
+- Click on dropdown menu to choose location and view the desired weather report.
+
+- Or press Enter key to choose location and view the desired weather report.
