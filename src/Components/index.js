@@ -91,6 +91,9 @@ class index extends Component {
 
     
   render() {
+    if(this.state.weather.applicable_date){
+
+    }
     return (
       <div>
           <div 
@@ -132,13 +135,12 @@ class index extends Component {
                     value={weather}                      
                     className="weather_list"
                     > 
-                        <h2 className="header"> Today </h2>  
+                        <p className="header"> {weather.applicable_date} </p>  
                         <p> <img src={this.state.imgSrc} alt="WeatherIcon" height="22" width="22" onLoad={this.handleWeatherIcon.bind(this,weather)}/>
                         {weather.weather_state_name} </p>
                         <p className="weather_prop"> Max: {weather.max_temp}°C </p>
                         <p className="weather_prop"> Min:{weather.min_temp}°C</p>
                         <p className="weather_prop"> <img src={this.state.imageSrc} alt="WeatherIcon" height="12" width="12" classname="weather_icon"onLoad={this.handleWeatherIcon.bind(this,weather)}/> {weather.wind_speed} mph </p>
-                        {/* <p className="weather_prop"> Applicable date: {weather.applicable_date} </p> */}
                         </li>
                       )}
              </ul> }

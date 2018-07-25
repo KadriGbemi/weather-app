@@ -107,7 +107,7 @@ datalist {
 }
 
 .weatherDropdown{
-  width: 68%;
+  width: 69%;
   max-height: 136px;
   overflow: hidden;
   position: absolute;
@@ -117,14 +117,14 @@ datalist {
 }
 .weather_list{
   background-color: white;
-  list-style-type: none;
-  width: 33.33%;
-  text-align: left;
-  min-height: 0px;
-  overflow: hidden;
-  color: rgb(85, 83, 83);
-  font-size: 10px;
-  float: left;
+    width: 33.33%;
+    min-height: 0px;
+    overflow: hidden;
+    color: rgb(85, 83, 83);
+    font-size: 10px;
+    float: left;
+    border-color: white;
+    margin-left: -1px;
 }
 .dropdown-list:hover{
   border: 1px;
